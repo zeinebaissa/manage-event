@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="login.component.css">
+    <title>Homepage</title>
+    </head>
+
+    <body>
+
+<div class="login-container container pt-3"  >
+  <div class="row">
+    <div class="col-md-4 col-sm-8 m-auto">
+<div class="card border-0 shadow">
+  <div class="card-body">
+    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"  viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+    </svg>  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input type="text" id="username" formControlName="username" class="form-control my-3 py-2" placeholder="username" required>
+  
+      <input type="password" id="password" formControlName="password" class="form-control my-3 py-2" placeholder="password" required>
+
+      <div class="text-center mt-3">
+        <button type="submit" class="btn btn-primary">Login</button>
+
+
+      </div>
+    </form>
+</div>  
+
+<!-- login.component.html -->
